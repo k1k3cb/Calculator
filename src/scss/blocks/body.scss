@@ -2,3 +2,44 @@ html {
 }
 body {
 }
+
+.header__title {
+	text-align: center;
+}
+
+.calculator {
+	height: auto;
+	width: 500px;
+	background-color: burlywood;
+
+	margin-inline: auto;
+
+	&__header {
+		height: 150px;
+		background-color: lightblue;        
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        font-size: 30px;
+        padding: 20px;
+
+        
+	}
+
+	&__body {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-auto-rows: minmax(100px, auto);
+	}
+
+	&__key {
+		font-size: 30px;
+		font-weight: bold;
+	}
+}
+
+.equal{
+
+    grid-column: 3/5;
+    background-color: rgb(149, 234, 149);
+}
